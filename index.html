@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Warisan & Kopi Cafe</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box;font-family:Poppins,sans-serif;scroll-behavior:smooth}
+body{background:#faf7f2;color:#222}
+header{
+height:100vh;
+background:linear-gradient(rgba(0,0,0,.55),rgba(0,0,0,.55)),
+url('https://images.unsplash.com/photo-1554118811-1e0d58224f24?auto=format&fit=crop&w=1600&q=80');
+background-size:cover;background-position:center;
+display:flex;justify-content:center;align-items:center;text-align:center;color:#fff}
+.hero h1{font-size:5rem}
+.hero p{font-size:1.3rem;margin:15px 0}
+.btn{padding:15px 30px;background:#b87a41;color:white;text-decoration:none;border-radius:50px;margin:5px;display:inline-block}
+nav{position:fixed;top:0;width:100%;background:rgba(255,255,255,.9);backdrop-filter:blur(10px);padding:15px;z-index:999}
+nav ul{display:flex;justify-content:center;gap:25px;list-style:none}
+nav a{text-decoration:none;color:#222;font-weight:600}
+section{padding:90px 8%}
+.section-title{text-align:center;font-size:2.5rem;margin-bottom:40px}
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:25px}
+.card{
+background:white;border-radius:20px;overflow:hidden;
+box-shadow:0 10px 30px rgba(0,0,0,.1);
+transition:.3s}
+.card:hover{transform:translateY(-10px)}
+.card img{width:100%;height:220px;object-fit:cover}
+.card-content{padding:20px}
+.price{color:#b87a41;font-weight:bold}
+.gallery{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+gap:20px}
+.gallery img{width:100%;height:300px;object-fit:cover;border-radius:20px}
+.stats{
+display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+gap:20px;text-align:center}
+.stat{background:white;padding:30px;border-radius:20px}
+.review{background:white;padding:25px;border-radius:20px}
+form{max-width:700px;margin:auto}
+input,select,textarea{
+width:100%;padding:15px;margin:10px 0;border:1px solid #ddd;border-radius:10px}
+button{background:#b87a41;color:white;border:none;padding:15px 30px;border-radius:10px}
+footer{background:#111;color:white;text-align:center;padding:30px}
+.menu-tabs{text-align:center;margin-bottom:30px}
+.menu-tabs button{margin:5px;padding:12px 20px}
+.whatsapp{
+position:fixed;bottom:20px;right:20px;
+background:#25D366;color:white;padding:15px 20px;
+border-radius:50px;text-decoration:none;font-weight:bold}
+</style>
+</head>
+<body>
+
+<nav>
+<ul>
+<li><a href="#about">About</a></li>
+<li><a href="#menu">Menu</a></li>
+<li><a href="#gallery">Gallery</a></li>
+<li><a href="#events">Events</a></li>
+<li><a href="#booking">Booking</a></li>
+</ul>
+</nav>
+
+<header>
+<div class="hero">
+<h1>Warisan & Kopi</h1>
+<p>Traditional Malaysian Flavours • Modern Café Experience</p>
+<a class="btn" href="#menu">Explore Menu</a>
+<a class="btn" href="#booking">Reserve Table</a>
+</div>
+</header>
+
+<section id="about">
+<h2 class="section-title">Our Story</h2>
+<p style="text-align:center;font-size:1.1rem;max-width:900px;margin:auto">
+A vintage-inspired Malaysian café serving handcrafted coffee, local delights, artisan desserts and a cozy environment for families, students and professionals.
+</p>
+</section>
+
+<section>
+<div class="stats">
+<div class="stat"><h2>15K+</h2><p>Customers Served</p></div>
+<div class="stat"><h2>4.9★</h2><p>Average Rating</p></div>
+<div class="stat"><h2>50+</h2><p>Menu Items</p></div>
+<div class="stat"><h2>1986</h2><p>Inspired Heritage Theme</p></div>
+</div>
+</section>
+
+<section id="menu">
+<h2 class="section-title">Featured Menu</h2>
+<div class="cards">
+<div class="card">
+<img src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?auto=format&fit=crop&w=1000&q=80">
+<div class="card-content"><h3>Signature Latte</h3><p class="price">RM12.90</p></div>
+</div>
+<div class="card">
+<img src="https://images.unsplash.com/photo-1515003197210-e0cd71810b5f?auto=format&fit=crop&w=1000&q=80">
+<div class="card-content"><h3>Nasi Lemak Premium</h3><p class="price">RM15.90</p></div>
+</div>
+<div class="card">
+<img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?auto=format&fit=crop&w=1000&q=80">
+<div class="card-content"><h3>Chicken Chop</h3><p class="price">RM19.90</p></div>
+</div>
+<div class="card">
+<img src="https://images.unsplash.com/photo-1563805042-7684c019e1cb?auto=format&fit=crop&w=1000&q=80">
+<div class="card-content"><h3>Burnt Cheesecake</h3><p class="price">RM14.90</p></div>
+</div>
+</div>
+</section>
+
+<section id="gallery">
+<h2 class="section-title">Gallery</h2>
+<div class="gallery">
+<img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=1200&q=80">
+<img src="https://images.unsplash.com/photo-1521017432531-fbd92d768814?auto=format&fit=crop&w=1200&q=80">
+<img src="https://images.unsplash.com/photo-1501339847302-ac426a4a7cbb?auto=format&fit=crop&w=1200&q=80">
+</div>
+</section>
+
+<section id="events">
+<h2 class="section-title">Upcoming Events</h2>
+<div class="cards">
+<div class="review"><h3>Live Acoustic Night</h3><p>Every Friday • 8PM</p></div>
+<div class="review"><h3>Coffee Workshop</h3><p>Every Saturday • 3PM</p></div>
+<div class="review"><h3>Student Study Sessions</h3><p>Daily • Free WiFi</p></div>
+</div>
+</section>
+
+<section>
+<h2 class="section-title">Customer Reviews</h2>
+<div class="cards">
+<div class="review">★★★★★ Amazing atmosphere and food.</div>
+<div class="review">★★★★★ Best coffee in town.</div>
+<div class="review">★★★★★ Perfect for meetings and studying.</div>
+</div>
+</section>
+
+<section id="booking">
+<h2 class="section-title">Reserve A Table</h2>
+<form>
+<input placeholder="Full Name">
+<input placeholder="Phone Number">
+<input type="email" placeholder="Email">
+<select>
+<option>2 Persons</option>
+<option>4 Persons</option>
+<option>6 Persons</option>
+<option>8 Persons</option>
+</select>
+<input type="date">
+<textarea placeholder="Special Requests"></textarea>
+<button>Book Now</button>
+</form>
+</section>
+
+<footer>
+<h3>Warisan & Kopi Café</h3>
+<p>Instagram • Facebook • TikTok</p>
+<p>© 2026 Premium Café Demo</p>
+</footer>
+
+<a class="whatsapp" href="#">WhatsApp Us</a>
+
+</body>
+</html>
